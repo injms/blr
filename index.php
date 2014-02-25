@@ -6,16 +6,16 @@
         
         <title>inj.ms - the information superhighway web spaceTM of Ian James</title>
         
-        <? /* Search engine snippet help - still reasonably useful for humans
+        <?php /* Search engine snippet help - still reasonably useful for humans
         ------------------------------------------------------------------ */ ?>
         <meta name="abstract"       content="A very short title" />
         <meta name="description"    content="A short description, best kept under 156 characters to avoid being truncuated." />
         <meta name="keywords"       content="comma, separated, keywords" /> 
-        <meta name="author"         content="Ian James, ianjam.es" />
-        <meta name="designer"       content="Ian James, www.ianjam.es" />
+        <meta name="author"         content="Your name here, your website here" />
+        <meta name="designer"       content="Ian James, www.inj.ms" /><?php /* a bit of credit would be nice, eh? */ ?>
         
         
-        <? /* Other misc bits - telephones, webapps, image toolbars
+        <?php /* Other misc bits - telephones, webapps, image toolbars
         ------------------------------------------------------------------ */ ?>
         <meta name="format-detection" content="telephone=no" />
         
@@ -25,7 +25,7 @@
         <meta http-equiv="imagetoolbar" content="false" />
 
 
-        <? /* No archiving please
+        <?php /* No archiving please
         ------------------------------------------------------------------ */ ?> 
         <meta name="robots"     content="noarchive" />
         <meta name="googlebot"  content="noarchive" />
@@ -33,7 +33,7 @@
         <meta name="msnbot"     content="noarchive" />
         <meta name="teoma"      content="noarchive" />  
         
-        <? /*
+        <?php /*
         ------------------------------------------------------------------ */ ?> 
         <link rel="stylesheet" href="style.css" />
         <!-- <script src="js/modernizr.min.js"></script> 
@@ -43,11 +43,11 @@
         
         <script>
         //<![CDATA[
-            (function(){
-                window.onload = function(){
-                    document.getElementsByTagName('html')[0].className += ' loaded';
-                };
-            })();
+        (function(){
+            window.onload = function(){
+                document.getElementsByTagName('html')[0].className += ' loaded';
+            };
+        })();
         //]]>
         </script>
     </head>
