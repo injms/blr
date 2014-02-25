@@ -1,0 +1,67 @@
+header,
+section,
+footer {
+}
+
+
+//------------------------------------------------------------------------------
+//  The card 
+//------------------------------------------------------------------------------
+
+
+.card {
+    background: rgba(0, 0, 0, 0.25);
+    // border: 1px solid rgba(255,255,255,0.25);
+    .border-radius(0.25em);
+    height: 33%;
+    margin: auto;
+    max-width: ( ( 480 - 32 ) / 16em);
+    min-height: ( ( 480 - 32 ) / 16em);
+    min-width: ( ( 320 - 32 ) / 16em);
+    // opacity: 0;
+    overflow: hidden;
+    // padding: 1em;
+    position: relative;
+    top: 1em;
+    .transition(all 1500ms ease-in-out);
+}
+
+header {
+    padding: 0 0 1em 0;
+    
+    h1 {
+        padding: (0.5em / @h1-size) (1em / @h1-size);
+    }
+    p {
+        padding: 0.5em 1em;
+    }
+}
+
+section {
+    padding: 0 1em;
+}
+
+//------------------------------------------------------------------------------
+//  The Magnificent CLEARFIX: Updated to prevent margin-collapsing on child 
+//  elements << j.mp/bestclearfix
+//------------------------------------------------------------------------------
+
+.cf {
+    
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+    }
+    
+    &:after {
+    clear: both;
+    }
+}
+        
+.ie6,
+.ie7 {
+    .cf { /* IE < 8 */
+    zoom: 1;
+    }
+}

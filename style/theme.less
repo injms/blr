@@ -1,0 +1,29 @@
+//------------------------------------------------------------------------------
+//  The body and faux background must share CSS styles
+//------------------------------------------------------------------------------
+
+body,
+.faux-background {
+	background: transparent url('images/mav.jpg') no-repeat 50% 50%;
+	background-image: url('http://ianjames.net/wp-content/uploads/2013/12/brighton-pier-fairground2.jpg');
+	.background-size(cover);
+    display: block;
+}
+
+.faux-background {
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+
+//------------------------------------------------------------------------------
+//  Any class changes that should be done after load
+//------------------------------------------------------------------------------
+
+.loaded {
+    .card {
+        opacity: 1;
+    }
+}

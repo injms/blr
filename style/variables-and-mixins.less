@@ -1,0 +1,154 @@
+@background-colour: @sunflower;
+@text-colour: @midnight;
+@link-colour: @midnight;
+
+@christmas-red: #d72526;
+
+/* fonts
+----------------------------------------------------------------------------- */
+.font-sans-serif ( @font-size, @line-height: 1em, 1) {
+	font: normal @font-size / @line-height 'Raleway', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.font-serif ( @font-size, @line-height: 1em, 1) {
+	font: normal @font-size / @line-height Georgia, 'Times New Roman', serif;
+}
+
+.font-icon {
+    font-family: 'SSStandard';
+}
+
+.font-icon-social {
+    font-family: 'SSSocial';
+}
+
+/* Grays
+----------------------------------------------------------------------------- */
+@black: rgba(0, 0, 0, 1);
+@darkergrey: #292929;
+@darkgrey: #333;
+@grey: #555;
+@lightgrey: #aaa;
+@lightergrey: #eee;
+@white: rgba(255, 255, 255, 1);
+
+/* Other colours
+----------------------------------------------------------------------------- */
+@turquoise:     rgba(26, 188, 156, 1); //#1dd2af
+@emerald:       rgba(46, 204, 113, 1);
+@sunflower:     rgba(241, 196, 15, 1);
+@blue:          rgba(52, 152, 219, 1);
+@blue-dark:     rgba(41, 128, 185, 1);
+@purple:        rgba(155, 89, 182, 1);
+@purple-dark:   rgba(142, 68, 173, 1);
+@asphalt:       rgba(44, 62, 80, 1);
+@midnight:      rgba(44, 62, 80, 1);
+@offwhite:      rgba(236, 240, 241, 1);
+
+/* Brand colours
+----------------------------------------------------------------------------- */
+@dropbox-colour: #3d9ae8;
+@evernote-colour: #5ba525;
+@facebook-colour: #3b5998;
+@flickr-colour: #ff0084;
+@github-colour: #171515;
+@googleplus-colour: #db4a39;
+@html5-colour: #ec6231;
+@instagram-colour: #634d40;
+@lastfm-colour: #c3000d;
+@linkedin-colour: #0e76a8;
+@paypal-dark-colour: #1e477a;
+@paypal-light-colour: #3b7bbf;
+@rdio-colour: #008fd5;
+@rss-colour: #ee802f;
+@skype-colour: #00aff0;
+@spotify-colour: #81b71a;
+@twitter-colour: #00a0d1;
+@vimeo-colour: #86c9ef;
+@xbox-colour: #9bc848;
+@youtube-colour: #c4302b;
+
+
+/* Away with the prefixes!
+--------------------------------------------------------------------------------------------------- */
+.backface-visibility( @bckfc-vsblty: hidden ) {
+		-moz-backface-visibility: @bckfc-vsblty;
+		-ms-backface-visibility: @bckfc-vsblty;
+		-webkit-backface-visibility: @bckfc-vsblty;
+	backface-visibility: @bckfc-vsblty;
+}
+
+.background-size(@bckgrndsz: contain){
+		-moz-background-size: @bckgrndsz;
+		-webkit-background-size: @bckgrndsz;
+		-o-background-size: @bckgrndsz;
+	background-size: @bckgrndsz;
+}
+
+.filter( @fltr: blur(10px) ){
+        -webkit-filter: @fltr;
+        -moz-filter:@fltr;
+        -o-filter: @fltr;
+        -ms-filter: @fltr;
+        filter: url('#blur-effect');
+    // filter: @fltr;
+    }
+
+.box-sizing(@bb: border-box){
+		-moz-box-sizing: @bb;
+		-webkit-box-sizing: @bb;
+		-o-box-sizing: @bb;
+	box-sizing: @bb;
+}
+
+.border-radius(@br: 45%) {
+		-moz-border-radius: @br;
+		-webkit-border-radius: @br;
+		-o-border-radius: @br;
+	border-radius: @br;
+}
+
+.box-shadow(@shadow: @black 0 0 0.5em) {
+		-webkit-box-shadow: @shadow;
+		-moz-box-shadow: @shadow;
+	box-shadow: @shadow;
+}
+.gradient (@start-colour: fade(@base-black, 100), @end-colour: fade(@base-black, 0), @base-colour: @green-light) {
+		background: -webkit-gradient(linear, left top, left bottom, from(@start-colour), to(@end-colour));
+		background: -webkit-linear-gradient(top, @start-colour, @end-colour);
+		background: -moz-linear-gradient(top, @start-colour, @end-colour);
+		background: -ms-linear-gradient(top, @start-colour, @end-colour);
+		background: -o-linear-gradient(top, @start-colour, @end-colour);
+	background: linear-gradient(top, @start-colour, @end-colour);
+	background-color: @base-colour;
+}
+.transition(@trnstn: all 300ms ease-in-out) {
+		-moz-transition: @trnstn;
+		-webkit-transition: @trnstn;
+		-o-transition: @trnstn;
+		-ms-transition: @trnstn;
+	transition: @trnstn;
+}
+	
+.transform(@trnsfrm: scale(1.1)){
+		-moz-transform: @trnsfrm;
+		-o-transform: @trnsfrm;
+		-ms-transform: @trnsfrm;
+		-webkit-transform: @trnsfrm;
+	transform: @trnsfrm;
+}
+
+.transform-style(@trnsfrm-styl: preserve-3d){
+		-moz-transform-style: @trnsfrm-styl;
+		-o-transform-style: @trnsfrm-styl;
+		-ms-transform-style: @trnsfrm-styl;
+		-webkit-transform-style: @trnsfrm-styl;
+	transform-style: @trnsfrm-styl;
+}
+
+.perspective(@prspctv: 75em) {
+		-moz-perspective: @prspctv;
+		-ms-perspective: @prspctv;
+		-webkit-perspective: @prspctv;
+	perspective: @prspctv;
+}

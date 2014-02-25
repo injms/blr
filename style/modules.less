@@ -1,0 +1,97 @@
+.blurred {
+    .filter( blur(15px) );
+    filter: url('filters.svg#blur');
+    overflow: hidden;
+}
+
+
+// -----------------------------------------------------------------------------
+// Profile picture
+// -----------------------------------------------------------------------------
+h1 {
+    &:after {
+        background: url('http://s.gravatar.com/avatar/9707930790338feb7fae3cfc32b36b15?s=240') no-repeat 50% 50%;
+        .background-size(cover);
+        .border-radius;
+        content: '';
+        display: block;
+        float: right;
+        height: ( 120 / @h1 );
+        margin: 0.25em 0;
+        overflow: hidden;
+        width: ( 120 / @h1 );
+    }
+}
+
+// -----------------------------------------------------------------------------
+// Icons
+// -----------------------------------------------------------------------------
+
+.icon,
+.icon-social {
+    display: block;
+    font-size: 1em;
+    height: 2.1em;
+    left: 0;
+    line-height: 2.25em;
+    position: absolute;
+    speak: none; // Not to be trusted, but hey.
+    text-align: center;
+    text-decoration: none;
+    width: 2.1em;
+    
+    &:before {
+        color: fade(@offwhite, 85);
+        content: attr(data-icon);
+        font-family: 'SSStandard';
+        padding: 0 0.25em;
+    }
+}
+
+.icon-social {
+    &:before {
+        .font-icon-social;
+    }
+    
+    + .descriptor {
+        // .visually-hidden;
+        display: none;
+    }
+}
+
+// -----------------------------------------------------------------------------
+// Button
+// -----------------------------------------------------------------------------
+
+.block {
+    .button {
+        .border-radius(0.95em);
+    }
+}
+.button {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    .border-radius;
+    .box-sizing(border-box);
+    color: @offwhite;
+    display: inline-block;
+    font-size: 1.5em;
+    height: 2.1em;
+    line-height: 2.1em;
+    margin: 0 0.5em 0.5em 0;
+    min-width: 2.1em;
+    padding: 0 0.35em 0 1.75em;
+    position: relative;
+    
+    &:active {
+        background-color: fade(@white, 25);
+        border-color: fade(@white, 25);
+    }
+    
+    &:hover {
+        border-color: @white;
+    }
+}
+
+.descriptor {
+    padding-right: 0.35em;
+}
