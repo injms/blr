@@ -43,11 +43,11 @@
         
         <script>
         //<![CDATA[
-        (function(){
-            window.onload = function(){
-                document.getElementsByTagName('html')[0].className += ' loaded';
-            };
-        })();
+            (function(){
+                window.onload = function(){
+                    document.getElementsByTagName('html')[0].className += ' loaded';
+                };
+            })();
         //]]>
         </script>
     </head>
