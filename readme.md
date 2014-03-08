@@ -1,7 +1,7 @@
 Blr
 ===
 
-A simple business-card-style landing page used on [injm.ms](http://inj.ms).
+A simple business-card-style landing page used on [inj.ms](http://inj.ms).
 
 Simply add:
 - Your own icon font; or
