@@ -44,8 +44,12 @@
         <script>
         //<![CDATA[
             (function(){
+                var a = document.getElementsByTagName('html')[0];
+                
+                a.className = 'js';
+                
                 window.onload = function(){
-                    document.getElementsByTagName('html')[0].className += ' loaded';
+                    a.className += ' loaded';
                 };
             })();
         //]]>
